@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div id="line1">
+
+  <div class="vid-container">
+
+    <video id="local-vid" height="100" width="100" autoplay></video>
+  </div>
+  <div class="vid-container">
+    <video id="remote-vid" height="100" width="100" autoplay></video>
+  </div>
+  </div>
+  <label>SDP</label>
+  <textarea class="sdp" rows="5" cols="30"></textarea>
+  <label>Ice Candidates</label>
+  <textarea class="ice" rows="5" cols="30"></textarea>
+  <div id="btn-container">
+    <button id="create-offer">Create offer</button>
+    <button class="sdp">Submit SDP</button>
+    <button class="ice">Submit ICE</button>
+  </div>
+</body>
+
+</html>
+<style>
+  body {
+    background-color: lightgray;
+  }
+  
+  #line1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .vid-container {
+    background-color: white;
+  }
+  
+  #btn-container {
+    text-align: center;
+  }
+</style>
